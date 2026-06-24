@@ -1,5 +1,3 @@
-package Day6
-
 fun main() {
     // Kotlin의 객체 생성 방식. 클래스명을 바로 호출, 변수에 담는다.
     val goat = Person("Faker", 30)

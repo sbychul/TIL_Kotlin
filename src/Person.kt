@@ -1,5 +1,3 @@
-package Day6
-
 // 클래스 이름 옆 괄호로 생성자 설정하는 방식. 이름과 나이를 받아 객체 생성.
 // 멤버 변수 선언 + 생성자 정의 + 값 대입이 한 번에 끝나게 됨.
 class Person(val name: String, val age: Int) {
@@ -11,3 +9,5 @@ class Person(val name: String, val age: Int) {
     // 프로퍼티 방식이 아닌 함수로 구현하고자 한다면:
     fun checkAdult(): Boolean = age >= 20 // 일반 함수 형태로 클래스 내부에 정의
 }
+
+// 6일차, 9일차에 사용됨
