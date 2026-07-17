@@ -9,7 +9,7 @@ class OrderSystem {
         // [문제 1] 타입 검사 후 스마트 캐스트를 시도하는 부분
         if (currentProduct is SmartPhone) {
             // 아래 줄에서 컴파일 에러가 발생합니다. 왜일까요?
-            println("스마트폰 OS: ${currentProduct.os}")
+            // println("스마트폰 OS: ${currentProduct.os}") (여기 컴파일 에러 때문에 뭐가 안 돼서 주석 처리)
             // 답: var이기 때문에 if문 직후 다른 일반 Product 객체나 null이 들어가버릴 수 있기 때문에 컴파일러에서 이를 거부한다.
             // val(불변 변수)으로 세팅해 주면 오류가 발생하지 않음.
         }
