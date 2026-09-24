@@ -9,7 +9,7 @@ import kotlinx.coroutines.delay
 class DownloadPipelineEngine {
     // 단일 파일 다운로드 메서드
     suspend fun downloadSingleTask(task: DownloadTask, onProgress: (percent: Int) -> Unit) : DownloadStatus {
-        onProgress(0); // 일단 0%로 시작이라는 거임
+        onProgress(0) // 일단 0%로 시작이라는 거임
         // 가상 다운로드 시뮬레이션
         delay(60) // 0.06초마다 50%가 참
         onProgress(50)
